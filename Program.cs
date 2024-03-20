@@ -12,6 +12,7 @@ namespace Farmacie
         static void Main(string[] args)
         {
             //Farmacie.Farmacie farmacie = new Farmacie.Farmacie();
+            
 
             string optiune;
             do
