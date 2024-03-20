@@ -80,7 +80,6 @@ namespace Farmacie
                         $"\n\tpret: {medicamente[i].pret}\n\tcantitate: {medicamente[i].cantitate}\n");
                 }
             }
-            
 
         }
         public static void CautareMedicamentNume()
