@@ -8,5 +8,6 @@ namespace Farmacie
 {
     internal class Farmacist
     {
+
     }
 }
