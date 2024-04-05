@@ -61,7 +61,17 @@ namespace Farmacie
             Console.WriteLine("Introduceti cantitatea");
             int cantitate = 0;
             int.TryParse(Console.ReadLine(),out cantitate);
-            Medicament medicament = new Medicament(nume,data_expirare,pret,cantitate);
+
+            Console.WriteLine("Eliberat cu reteta?");
+            Medicament.Reteta reteta = 0;
+            Enum.TryParse(Console.ReadLine(), out reteta);
+
+
+            Console.WriteLine("Introduceti varsta");
+            Medicament.Varsta varsta = 0;
+            Enum.TryParse(Console.ReadLine(), out varsta);
+
+            Medicament medicament = new Medicament(nume, data_expirare, pret, cantitate, reteta, varsta);
 
             return medicament;
 
@@ -77,7 +87,7 @@ namespace Farmacie
                 for (int i = 0; i < medicamente.Length; i++)
                 {
                     Console.WriteLine($"Medicamentul numarul {i}:\n\tnume: {medicamente[i].nume}\n\tdata expirare: {medicamente[i].data_expirare}" +
-                        $"\n\tpret: {medicamente[i].pret}\n\tcantitate: {medicamente[i].cantitate}\n");
+                        $"\n\tpret: {medicamente[i].pret}\n\tcantitate: {medicamente[i].cantitate}\n\treteta: {medicamente[i].reteta}\n\tvarsta: {medicamente[i].varsta}\n");
                 }
             }
 
