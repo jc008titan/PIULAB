@@ -12,7 +12,7 @@ namespace Farmacie
         { Fara,Cu}
         [Flags]
         public enum Varsta
-        { Copii0_3=0,  Copii3_9=1, Copii9_18=2, Adulti=4}
+        { Adulti=0,  Copii3_9=1, Copii9_18=2, Copii0_3 = 4}
 
         public Reteta reteta;
         public Varsta varsta;
