@@ -71,12 +71,12 @@ namespace Farmacie
             string[] grupevarsta = Console.ReadLine().Split();
             Medicament.Varsta varsta = 0;
             Medicament.Varsta varstacitita;
-            for(int i=0;i< grupevarsta.Length;i++)
+            for (int i = 0; i < grupevarsta.Length; i++)
             {
                 Enum.TryParse(grupevarsta[i], out varstacitita);
                 varsta |= varstacitita;
             }
-   
+
 
             Medicament medicament = new Medicament(nume, data_expirare, pret, cantitate, reteta, varsta);
 
